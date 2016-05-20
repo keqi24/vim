@@ -80,3 +80,10 @@ au FileType go nmap <Leader>s <Plug>(go-implements)
 "<leader> key
 let mapleader = ','
 
+"geeknote
+noremap <F8> :Geeknote<cr>
+au FileType markdown nmap :create :GeeknoteCreateNote 
+
+"vim instant markdown
+let g:instant_markdown_autostart = 0
+au FileType markdown map <Leader>pre :InstantMarkdownPreview<cr>
